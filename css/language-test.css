@@ -1,0 +1,164 @@
+.main-wrapper {margin-top: 80px}
+
+h1.heading {text-align: center}
+.main-txt, .result p {
+	text-align: center;
+	max-width: 700px;
+	margin: 20px auto;
+}
+
+.share-block {
+	width: 220px; 
+	margin: 0 auto;
+	margin-bottom: 20px
+}
+
+h2.heading, .result h3 {
+	text-align: center;
+	color: #F16A51;
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+
+@media(max-width: 400px) {
+	h2.heading, .result h3 {font-size: 20px}
+	h1.heading {font-size: 23px}
+}
+
+#test {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media(min-width: 1024px) {
+	#test > div {margin-right: 25px; margin-left: 50px}
+}
+
+#test > div {
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 500;
+	font-size: 14px;
+
+	transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+}
+
+#test > div > div:not(#restart):not(.allResultCourses):not(.tag-course):not(.course) {
+	width: 300px;
+	padding: 20px 0;
+	border-radius: 9px;
+}
+
+#test > div > div > img {
+	margin-bottom: 20px;
+}
+
+#test > div > div:not(#restart):not(.tag-course):not(.allResultCourses):not(.course):hover {
+	cursor: pointer;
+	background: #fff;
+	-webkit-box-shadow: 4px 8px 20px rgba(196,196,196,.3);
+    box-shadow: 4px 8px 20px rgba(196,196,196,.3);
+}
+
+#test > div > div:not(#restart):not(.course):not(.allResultCourses):hover img {transform: scale(1.05)}
+
+@media(min-width: 601px) {
+	#mc-container {
+		width: 80%;
+		margin: 50px 10%;
+	}
+}
+
+@media(max-width: 600px) {
+	#mc-container {
+		width: 100%;
+		margin: 50px 0%;
+	}
+}
+
+/* Разные стили для блоков что показываются после дейстивий пользователя */
+#restart {
+	text-align: center;
+}
+
+#restart > div {
+	padding: 13px 70px;
+    font-size: 15px;
+}
+
+.result p {font-weight: 300; font-size: 1rem}
+.result h3 {margin-bottom: 20px; color: #232323}
+.result a {font-weight: 400}
+
+.result .course {
+	max-width: 300px;
+	margin-bottom: 20px;
+}
+
+.result .course .title_course {
+    font-weight: 500;
+    font-size: .875rem;
+    color: #201E1C;
+}
+
+.result .course:hover .title_course {
+    color: #F26651;
+}
+
+.result .course .course-img {
+	position: relative;
+}
+
+.result .course img {width: 100%}
+
+.result .course .button-on-course {
+	position: absolute;
+	right: 0;
+    bottom: 0;
+    margin: 10px 11px;
+    -webkit-box-shadow: 2px 4px 10px rgba(33,31,29,.14)!important;
+    box-shadow: 2px 4px 10px rgba(33,31,29,.14)!important;
+    background-color: #fff;
+    color: #211f1d;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 12px;
+}
+
+.result .course:hover .button-on-course {
+	-webkit-animation: .4s pulse linear;
+    animation: .4s pulse linear;
+}
+
+.result .course:hover img {
+	-webkit-box-shadow: 10px 20px 20px rgba(107, 106, 105, 0.2);
+    box-shadow: 10px 20px 20px rgba(107, 106, 105, 0.2);
+}
+
+@keyframes pulse {
+	from {transform: scale(1)}
+	50% {transform: scale(1.3)}
+	to {transform: scale(1)}
+}
+
+.tag-course {
+	width: auto;
+    padding: 15px 30px;
+}
+
+.allResultCourses {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%!important;
+}
+
+.allResultCourses > div {margin: 0 20px}

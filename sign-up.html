@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тк21 ИКТ - Регистрация</title>
+
+  <link href="img/logo_simple.svg" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/A.main-style.css.pagespeed.cf.n5EMmRt1hp.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/A.user-main.css.pagespeed.cf.pODm8ef6Zl.css" type="text/css" charset="utf-8">
+
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <!-- Эти два тега нужны чтобы указать главную часть и прикрепить футер к низу страницы -->
+  <div id="wrapper">
+    <div id="content">
+      <header class="container">
+        <div id="everything-header">
+          <div id="logo">
+            <a href="index.html" title="На главную страницу">
+              <img src="img/logo_simple.svg" class="logo_simple" title="" alt="">
+              <span>Тк21 ИКТ</span>
+            </a>
+          </div>
+          <div id="about">
+            <a rel="nofollow" href="about.html">О нас</a>
+            <a href="kontakti.html" title="Обратная связь">Контакты</a>
+          </div>
+          <div id="reg_auth">
+            <a href="sign-in.html" class="btn white">
+              Войти
+              <div class="btn__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </a>
+            <a href="sign-up.html" class="btn red header-last-btn">
+              Регистрация
+              <div class="btn__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </a>
+          </div>
+          <div id="mobileMenu">
+            <div class="icon-menu"><i class="fas fa-bars"></i></div>
+          </div>
+        </div>
+        <div id="mobile-menu">
+          <a href="news/news.html">iT статьи</a><br>
+          <a href="courses/courses.html">Курсы</a><br>
+          <a href="about.html">О нас</a><br>
+          <a href="kontakti.html" title="Обратная связь">Контакты</a>
+          <br>
+          <a href="user/index.html" class="btn white">
+            Войти
+            <div class="btn__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </a>
+          <a href="reg.html" class="btn red header-last-btn">
+            Регистрация
+            <div class="btn__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </a>
+        </div>
+      </header>
+      <nav class="container">
+        <div id="hideMenu">
+          <a href="index.html" id="img-nav" title="На главную страницу">
+            <img src="img/logo_simple.svg" title="" alt="">
+          </a>
+          <a href="news/news.html">iT статьи</a>
+          <a href="courses/courses.html">Курсы</a>
+        </div>
+
+      </nav>
+
+
+
+      <div class="main-wrapper container">
+        <div class="user-auth-block">
+          <h1 class="heading">Регистрация</h1>
+          <p id="textHint">Чтобы войти на сайт сначала зарегистрируйтесь на нем!</p>
+          <div id="form_input">
+            <form action="" class="form-submit" method="post">
+              <input type="email" id="email" placeholder="Email">
+              <span class="eye-for-pass" id="eye-pass">
+                <input type="password" id="password" placeholder="Ваш пароль">
+                <i class="fas fa-eye" onclick="showPass('#password', '#eye')" id="eye"></i>
+              </span>
+              <input type="password" id="password-two" placeholder="Повторите пароль">
+              <div id="mess"></div>
+              <div id="auth" class="btn red btn-reg">
+                зарегистрироваться <div class="btn__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </form>
+            
+          </div>
+          
+        </div>
+      </div>
+
+
+    </div> <!-- Здесь закрываем тег #content -->
+
+
+
+    <!-- куки алерт (../js/cookies.js) -->
+    <div id="cookies-hide">
+      <div class="cookie container" id="cookies">
+        <div class="img-block">
+          <img src="img/cookie.svg" alt="Соглашение про использование Cookie">
+        </div>
+        <p class="cookie_alert_text">Мы используем файлы cookie, чтобы улучшить работу и повысить эффективность сайта.
+        </p>
+        <div class="btn red" onclick="display_hide('#cookies-hide')">Хорошо <div class="btn__blobs">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- финиш куки алерт -->
+
+    <footer class="container">
+      <div id="everything-footer">
+        <div class="logo">
+          <div id="to_top" onclick="return toTop()"><i class="fas fa-chevron-up"></i></div>
+          <a href="index.html" title="На главную страницу">
+            <img src="img/logo_simple.svg" class="logo_simple" title="" alt="">
+            <span>Тк21 ИКТ</span>
+          </a><br>
+          <p>Онлайн школа обучения<br>IT профессиям</p>
+        </div>
+        <div class="links">
+          <div>
+            <p class="headings-footer">Информация</p>
+            <ul>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="news/news.html">iT статьи</a></li>
+              <li><a href="courses/courses.html">Курсы</a></li>
+            </ul>
+            <!-- <ul class="last">
+              
+            </ul> -->
+          </div>
+          <div>
+            <p class="headings-footer">Аккаунт</p>
+            <ul>
+              <li><a href="sign-in.html">Войти</a></li>
+              <li><a href="sign-up.html">Регистрация</a></li>
+              <li><a href="kontakti.html">Обратная связь</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscribe">
+          <p>Подпишитесь на рассылку и сразу же получите 5 практических заданий по программированию!</p>
+          <form action="">
+            <input type="email" id="emailFooter" class="footer_subscribe" placeholder="E-mail">
+            <div id="subscribe_footer" class="btn red">
+              Подписаться <div class="btn__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </form>
+          <p class="mail-footer">Пишите: <noindex><a href="mailto:tk21icthelp@gmail.com"
+                rel="nofollow">tk21icthelp@gmail.com</a></noindex>
+          </p>
+        </div>
+      </div>
+      <div id="social-buttons">
+        <noindex><a href="" target="_blank" rel="nofollow">
+            <i class="fab fa-vk"></i>
+          </a></noindex>
+        <noindex><a href="" target="_blank" rel="nofollow">
+            <i class="fab fa-facebook-f"></i>
+          </a></noindex>
+        <noindex><a href="" target="_blank" rel="nofollow">
+            <i class="fab fa-twitter"></i>
+          </a></noindex>
+        <noindex><a href="" target="_blank" rel="nofollow" class="mt-4 mt-md-0">
+            <i class="fab fa-youtube"></i>
+          </a></noindex>
+        <noindex><a href="" target="_blank" rel="nofollow" class="mt-4 mt-md-0">
+            <i class="fab fa-telegram-plane"></i>
+          </a></noindex>
+        <noindex><a href="" target="_blank" rel="nofollow" class=" mt-4 mt-md-0">
+            <i class="fab fa-instagram"></i>
+          </a></noindex>
+      </div>
+    </footer>
+  </div> <!-- Здесь закрываем тег #wrapper -->
+
+
+
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/subscribe_footer.js%20to_top.js.pagespeed.jc.aVdfw0_n_q.js"></script>
+
+  <script>var cookie_text = ['Мы используем файлы cookies обязательные для работы нашего сайта и сервисов, на основании легитимного интереса. Также, мы хотели бы с вашего согласия установить на вашем устройстве опциональные аналитические cookies для запоминания данных о просмотре и пользовании сервисами, а также маркетинговые cookies, которые помогут нам понять, какие сервисы и продукты больше всего интересуют пользователей.', 'Технические', 'Аналитические', 'Маркетинговые', 'Сохранить'];</script>
+  <script src="js/cookies.js.pagespeed.jm.A7X2O00_Bs.js"></script>
+  <script>$('#mobileMenu div').on('click', function () { if ($('#mobile-menu').is(':visible')) { $('#mobile-menu').slideUp(); $('#mobileMenu .icon-menu').html('<i class="fas fa-bars"></i>'); } else { $('#mobile-menu').slideDown(); $('#mobileMenu .icon-menu').html('<i class="fas fa-times"></i>'); } }); $(document).scroll(function () {
+      if ($(document).width() < 1024) return false; var offset = '0'; if ($(document).scrollTop() > $('header').height() + 10 + parseInt(offset)) $('nav').addClass('fixed'); else
+        $('nav').removeClass('fixed');
+    }); function validSearch() { var query = $('#searchField').val().trim(); if (query.length > 1) { var res = query.replace(/\#/g, "sharp"); res = res.replace(/\+/g, "plus"); res = res.replace(/\//g, "slash"); res = res.replace(/\"/g, "quote"); res = res.replace(/\'/g, "quote"); res = res.replace(/\\/g, "slash"); res = res.replace(/\%/g, "percent"); res = res.replace(/\./g, "dot"); location.href = '/search/' + res; } }</script>
+
+
+
+  <script>
+    function slowScroll(id) {
+      var offset = 0;
+      if ($(window).width() > 992) offset = 50;
+      $('html, body').animate({ scrollTop: $(id).offset().top - offset }, 500);
+    }
+    var scene = document.getElementById('main-image');
+    
+    var scene_test = document.getElementById('test-image');
+   
+    if ($(window).width() <= 1024) main_parallax.disable();
+
+    $(document).on("scroll", function () {
+      if ($(window).width() <= 1024) return; if ($(this).scrollTop() > $('.first-section').outerHeight()) main_parallax.disable();
+      else
+        main_parallax.enable();
+    });
+    var show = false;
+    $(document).on("scroll load resize", function () {
+      if (show) return false;
+      if (isScrolledIntoView("#people_study")) {
+        show = true;
+        $('.numbers-section.container .numbers h3').css('opacity', '1');
+        spinItem("#people_study", 800);
+        spinItem("#subscribers_project", 1500);
+        spinItem("#vk_subs"); spinItem("#on_market", 500);
+        spinItem("#youtube_subs", 2200);
+      }
+    });
+    function spinItem(id, time = 2000) {
+      $(id).spincrement({
+        thousandSeparator: " ", duration: time, complete: function () {
+          $(id).text($(id).text() + "+");
+        }
+      });
+    }
+    function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height() + 30;
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+  </script>
+
+  <script src="js/user_auth.js.pagespeed.jm.kaBZzmIYG7.js"></script>
+</body>
+
+</html>
+
+
+
+
+
